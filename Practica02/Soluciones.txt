@@ -1,0 +1,25 @@
+---ROSALES ARAUJO SAMUEL---
+
+Línea 7: Quitè las variables sin valor, (a y c) ya que esos identifcadores ya tienen valores ya definidos dentro del INT, ademàs que modifiquè el valor de a, su valor era 3, y en el dato primitovo INT de abajo del còdigo donde es (a-3), que es el dividendo, es un error, porque si a=3 y su valor tambièn es 3, queda 0. Y no se puede dividir entre 0. Le modifiquè su valor a 4.
+
+Línea 9: A la variable de tipo Booleano, le corregì el error de la N mayùscula, se la pasè a minùscula, ademàs de que su valor era 0, y se lo cambiè a un TRUE, ya que el Boleano solo maneja dos valores, verdadero o falso.
+
+Línea 10: Hay un BYTE con el identificador de 8 bits, en la cual tenìa un valor de 128, (fuera de rango) y recordando clases anteriores, esto no es correcto, su valor corrector es 127.
+
+Línea 11: Hay un short que tiene como identificador 16 bits, en el cual su valor que tenìa era de -32769, (fuera de rango) pero corrigièndolo y checando, su valor correcto es: -32768.
+
+Línea 13: No creo que sea un error, pero para que se viera mejor y màs ordenado le puse parǹetesis para que se separaran y como dije anteriormente, se ordenaran.
+
+Línea 15: Hay dos errores, en el cual el primero trata de que la variable LONG, es incorrecto, se està trabajando con dato primitivo DOUBLE, y por lo tanto esa debe de ser, y el DISCRIMINANTE va con minùsculas, y no con una mayùscula al principio.
+
+Línea 18 y 19: CHAR, se escribe con minùsculas ademàs de que las separè con cada identificador (ch1 y ch2), ademàs que su caracter no va entre dos comillas, va entre comillas simples o apòstrofes.
+
+---TIEMPO DE ERROR DE EJECUCIÒN---
+
+Todo dependìa de la variable A, el dato primitivo INT ya tenìa un valor predeterminado que era 3. Màs abajo hay otro dato primitivo de tipo entero que hace una operaciòn, pero como el valor predeterminado era (a=3) y este en la operaciòn se restaba y se dividìa, daba como resultado 0. Por consecuente, una divisiòn entre 0 no se puede.
+
+---DECLARACIONES---
+
+En el INT, se pide que pongamos un idetificador llamado VAR_1, con un valor: 2147483647, en el cual hay un error. Cada vez que agrega algo a una variable, podría causar un desbordamiento o un fuera de rango, porque el compilador no sabe cuál será el valor. El nùmero 2147483648 se parece al número entero máximo que se puede transportar como 32 bits, por lo tanto, cuando agrega 1, marca el número entero mínimo. (a=a+1;).
+
+Agreguè un CHAR, con identificador QUOTE, para poner una comilla simple. Fue un reto ponerla, pero no tengo un mètodo como tal, intentè de varias maneras, pero fue intuiciòn poner: char quote = '\'';, y parecìa coherente, ya que la comilla estaba dentro de ellos, lo compilè y no hubo tal error.
