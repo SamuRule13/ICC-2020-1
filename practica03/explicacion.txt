@@ -1,0 +1,34 @@
+EXPLICACIONES.
+
+
+---ECUACIÓN---
+
+En la ecuaciòn solamente se tuvieron que detallar los parèntesis para que la misma pudiera obtener el acercamiento al resultado, no es exacta pero se aproxima demasiado a lo esperado.
+
+---PRE-POST---
+
+Aquì se hace una introducciòn. Este sìmbolo: (x--) o disminuirá el valor de x en 1. Es un operador de decremento postfix, (--x) es un operador de decremento de prefijo. El símbolo (x--) es como decirle a java: "A esta x le quitarás un uno, pero por esta línea de código trátala como x y en la siguiente le quitas el 1". 
+Ejemplo: 
+x = 1;
+system.out.println (x- -); // Aquì 'X' toma valor de 1.
+system.out.println (x); // Aquí 'x' ya vale 0. El (x--) lo puedes usar a dentro de un print, y si haces algo como: x = 1;
+system.out.println (--x); // Aquì 'x' vale 0.
+system.out.println (x); // Aquì 'x' ya vale 0. Por qué el (--x) es decirle a java, "Ahora quiero que 'x' ya valga uno menos de lo que valía".
+Tomando ya el ejercicio:
+int x = 20
+x-- \\ Aquì x = 20
+print( x ) \\ Aquì x=19
+--x \\ aqui x=18
+print ( x ) \\ imprime 18
+print ( --x ) \\ Aqui x=17 y se imprime 17
+print ( x-- ) \\ Aqui x=17 (pero en la siguiente linea vale 16) !e imprime 17!
+print( x ) \\ imprime x que vale 16.
+
+---OPERADORES---
+En este ejercicio, se tiene que explicar la razòn de lo obtenido:
+dividendoEntero / divisor = 7
+dividendoReal / divisor = 7.8
+Aquì hay dos cosas importantes, tenemos una variable de tipo ENTERA (INT) que tiene como identificadores a DIVISOR y DIVIDENDO ENTERO, en el cual, solo se pueden adminitr valores (obviamente) enteros. Y en el otro lado tenemos un double que son para nùmeros reales, que entra y salen nùmeros en decimal. 
+Cuando la operaciòn (dividendoEntero / divisor) se obtiene el 7, que en realidad es 7.8. Pero como su dato primitivo es un INT que es un ENTERO, literalmente le vale el decimal que viene con el entero y solo se obtiene el 7. Que en el caso contrario, que de divide (dividendoReal / divisor), como es un double que se pueden obtener decimales, cae como resultado un 7.8
+
+
